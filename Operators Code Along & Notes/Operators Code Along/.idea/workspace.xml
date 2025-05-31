@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd7abab1-b1cc-477a-8f29-7d2202add1ec" name="Changes" comment="" />
+    <list default="true" id="b222e69f-b683-400d-a2d3-53bc20b7f38b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Variables Code Along &amp; Notes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Variables Code Along &amp; Notes/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,12 +20,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2xh2EQOQfwUYrfRfXAjLcuDxVXL" />
+  <component name="ProjectId" id="2xlsbOH1UrWpInqQagGX1ckl8Y6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -33,22 +35,20 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Notes.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/shannonyoung/Desktop/Apprenti Git/JavaRepo/Variables Code Along &amp; Notes&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd7abab1-b1cc-477a-8f29-7d2202add1ec" name="Changes" comment="" />
-      <created>1748375872833</created>
+      <changelist id="b222e69f-b683-400d-a2d3-53bc20b7f38b" name="Changes" comment="" />
+      <created>1748524065888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1748375872833</updated>
+      <updated>1748524065888</updated>
     </task>
     <servers />
   </component>
