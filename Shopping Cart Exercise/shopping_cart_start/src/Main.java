@@ -1,5 +1,32 @@
 public class Main {
+
+    enum OrderStatus {
+        PENDING,
+        PROCESSING,
+        SHIPPED,
+        DELIVERED
+    }
+
+    enum ShippingStatus {
+        STANDARD,
+        TWO_DAY,
+        OVERNIGHT
+    }
+
     public static void main(String[] args) {
+        OrderStatus orderStatus = OrderStatus.PROCESSING;
+        ShippingStatus shippingStatus = ShippingStatus.TWO_DAY;
+
+        System.out.println(ShippingStatus.STANDARD);
+        System.out.println(ShippingStatus.TWO_DAY);
+        System.out.println(ShippingStatus.OVERNIGHT);
+        System.out.println("Oder Status" + orderStatus);
+
+        System.out.println(OrderStatus.PENDING);
+        System.out.println(OrderStatus.PROCESSING);
+        System.out.println("Ship Status: " + shippingStatus);
+
+
         // Assign variables
         int productID = 1;
         int productCategory = 2;
