@@ -27,6 +27,8 @@ public class Main {
         System.out.println("Quantity of products: " + quantity);
         System.out.println("Promo Code: " + code);
 
+        System.out.println("                                         ");
+
         System.out.println("Bye!");
 
 
