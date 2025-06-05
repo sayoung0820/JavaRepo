@@ -12,8 +12,8 @@ public class Main {
         String shipping = console.nextLine();
 
         System.out.println("Please enter your order quantity: ");
-        String quantityStr = console.nextLine();
-        int quantity = Integer.parseInt(quantityStr);
+        String quantity = console.nextLine();
+//        int quantity = Integer.parseInt(quantityStr); // Didn't realize I didn't need to convert it
 
         System.out.println("Please enter the promo code for free shipping or type NONE: ");
         String code = console.nextLine();
