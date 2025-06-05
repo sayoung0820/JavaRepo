@@ -39,6 +39,7 @@ public class ObjectPractice {
         System.out.println();
         BankAccount acc1 = new BankAccount("Alice", 1000.0);
         BankAccount acc2 = acc1;
+        acc1.displayBalance();
         System.out.println("Initial Balance (acc 1): $" + acc1.balance);
         System.out.println("Depositing $500 to acc2...");
         acc2.deposit(500.0);
@@ -46,6 +47,7 @@ public class ObjectPractice {
 //        acc1.displayBalance();
 
         // Create Employee Object
+        System.out.println();
         new Employee("John");
         new Employee("Jane");
         new Employee("Mike");
