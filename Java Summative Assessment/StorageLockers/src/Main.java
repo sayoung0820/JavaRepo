@@ -10,31 +10,37 @@ public class Main {
             Utilities.printMessage("Please enter a number greater than 0.");
             lockerCount = Utilities.getIntInput("How many lockers are available today? ");
         }
+        Utilities.printMessage("\nThere are " + lockerCount + " lockers available today.");
 
         LockerService manager = new LockerService(lockerCount);
         boolean running = true;
+        Results result = null;
 
         while (running) {
             Utilities.displayMenu(manager.hasAvailableLocker());
-            String choice = Utilities.getStringInput("Enter your choice: ");
+            String choice = Utilities.getStringInput("Please enter your choice: ");
 
             switch (choice) {
                 case "1":
                     if (manager.hasAvailableLocker()) {
-                        manager.rentLocker();
-                    } else {
-                        Utilities.printMessage("No lockers available.");
+                       result = manager.rentLocker();
+                       Utilities.printMessage(result.getMessage());
                     }
                     break;
                 case "2":
-                    manager.accessLocker();
+                    result = manager.accessLocker();
+                    Utilities.printMessage(result.getMessage());
                     break;
                 case "3":
-                    manager.releaseLocker();
+                    result = manager.releaseLocker();
+                    Utilities.printMessage(result.getMessage());
+                    break;
+                case "q":
+                    Utilities.printMessage("Thanks for using the app. Goodbye!");
+                    running = false;
                     break;
                 default:
-                    Utilities.printMessage("Goodbye!");
-                    running = false;
+                    Utilities.printMessage("Invalid choice. Please try again.");
             }
         }
     }

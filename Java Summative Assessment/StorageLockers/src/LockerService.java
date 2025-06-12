@@ -3,63 +3,48 @@
 
 
 public class LockerService {
-    private Locker[] lockers;
-    private Results results;
+    private final Locker[] lockers;
 
     public LockerService(int size) {
         lockers = new Locker[size];
         for (int i = 0; i < size; i++) {
             lockers[i] = new Locker(i + 1, null); // initialize lockers
         }
-        results = new Results();
     }
 
-    public boolean isFull() {
-        for (Locker locker : lockers) {
-            if (locker.isAvailable()) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public void rentLocker() {
+    public Results rentLocker() {
         for (Locker locker : lockers) {
             if (locker.isAvailable()) {
                 String pin = Utilities.generatePin();
                 locker.assignPin(pin);
-                Utilities.printMessage("Locker #" + locker.getLockerNumber() + " rented with PIN: " + pin);
-                return;
+                return new Results(true, "Locker #" + locker.getLockerNumber() + " rented with PIN: " + pin);
             }
         }
-
-//        Utilities.printMessage("Sorry, no lockers available to rent.");
+        return new Results(false, "Sorry, no lockers available to rent.");
     }
 
-    public void accessLocker() {
+    public Results accessLocker() {
         int lockerNumber = Utilities.getIntInput("Enter locker number: ");
         String pin = Utilities.getStringInput("Enter PIN: ");
 
         if (lockerNumber < 1 || lockerNumber > lockers.length) {
-            Utilities.printMessage("Invalid locker number.");
-            return;
+            return new Results(false, "Invalid locker number.");
         }
 
         Locker locker = lockers[lockerNumber - 1];
         if (!locker.isAvailable() && locker.getPin().equals(pin)) {
-            Utilities.printMessage("Access granted to locker #" + lockerNumber);
+            return new Results(true, "Access granted to locker #" + lockerNumber);
         } else {
-            Utilities.printMessage("Access denied. Incorrect PIN or locker is empty.");
+            return new Results(false, "Access denied. Incorrect PIN or locker is empty.");
         }
     }
 
-    public void releaseLocker() {
+    public Results releaseLocker() {
         int lockerNumber = Utilities.getIntInput("Enter locker number: ");
         String pin = Utilities.getStringInput("Enter PIN: ");
 
         if (lockerNumber < 1 || lockerNumber > lockers.length) {
-            Utilities.printMessage("Invalid locker number.");
-            return;
+            return new Results(false, "Invalid locker number.");
         }
 
         Locker locker = lockers[lockerNumber - 1];
@@ -67,12 +52,12 @@ public class LockerService {
             String confirm = Utilities.getStringInput("Are you sure you want to release locker #" + lockerNumber + "? (Yes/No): ");
             if (confirm.equalsIgnoreCase("Yes")) {
                 locker.clearLocker();
-                Utilities.printMessage("Locker #" + lockerNumber + " has been released.");
+                return new Results(true, "Locker #" + lockerNumber + " has been released.");
             } else {
-                Utilities.printMessage("Locker release canceled.");
+                return new Results(false, "Locker release cancelled.");
             }
         } else {
-            Utilities.printMessage("Error: Incorrect PIN or locker is already available.");
+            return new Results(false, "Error: Incorrect PIN or locker is already available.");
         }
     }
 

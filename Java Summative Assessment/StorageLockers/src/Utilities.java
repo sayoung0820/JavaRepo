@@ -36,7 +36,7 @@ public class Utilities {
         }
         System.out.println("2. Access a Locker");
         System.out.println("3. Release a Locker");
-        System.out.println("Any other key to Exit");
+        System.out.println("Q to Exit");
     }
 
     public static void printMessage(String message) {

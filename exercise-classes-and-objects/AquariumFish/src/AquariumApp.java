@@ -1,4 +1,4 @@
-// Original Starter Code in a single file
+ // Original Starter Code in a single file
 // Refactor this code - move local variables to an object
 // Completed the exercise then added an array, for loop,
 
