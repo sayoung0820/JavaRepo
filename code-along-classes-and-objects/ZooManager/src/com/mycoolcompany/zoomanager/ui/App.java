@@ -11,6 +11,8 @@ public class App {
         Animal tiger = new Animal("Tiger", 2, "ROAR");
         Animal bear = new Animal("Bear", 2, "growlsplash");
 
+        System.out.println(zoo.getName());
+
         Animal[] population = new Animal[3];
         population[0] = lion;
         population[1] = tiger;
