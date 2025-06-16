@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
+
+
     public static void main(String[] arg) {
         Scanner console = new Scanner(System.in);
         LockerManager manager = new LockerManager();
@@ -91,7 +93,7 @@ public class Main {
                     for (Locker locker : manager.getLockers()) {
                         if (locker.isOccupied()) {
                             anyOccupied = true;
-                            break;
+//                            break;
                         }
                     }
                     if (!anyOccupied) {
