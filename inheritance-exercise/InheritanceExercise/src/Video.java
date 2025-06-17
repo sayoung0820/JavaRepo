@@ -32,7 +32,7 @@ public class Video extends Media {
 
         @Override
         public String getDescription() {
-            return "Audio Name: " + getName() + "\nDuration" + duration + "\nVideo Resolution: " + videoResolution;
+            return "Audio Name: " + getName() + "\nDuration" + getDuration() + "\nVideo Resolution: " + getVideoResolution();
         }
 
     }
