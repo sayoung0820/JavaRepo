@@ -14,10 +14,10 @@ public class App {
 
         while (true) {
             System.out.println("\nEnter your spell incantation to case it!");
-            System.out.println("1. Enter 'creature' for Random Creature Spell");
-            System.out.println("2. Enter 'heal' for Healing Spell");
-            System.out.println("3. Enter 'ascend' for Levitation Spell");
-            System.out.println("4. Enter 'flames' for Flame Spell");
+            System.out.println("1. Enter 'creature' to be turned into a random forest creature");
+            System.out.println("2. Enter 'heal' to be magically healed");
+            System.out.println("3. Enter 'ascend' to magically levitate");
+            System.out.println("4. Enter 'flames' to magically shoot a ball of flames");
             System.out.println("5. Enter 'quit' to exit");
 
             System.out.println();
