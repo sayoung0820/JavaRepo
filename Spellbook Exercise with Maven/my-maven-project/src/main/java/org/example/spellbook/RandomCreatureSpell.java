@@ -1,8 +1,7 @@
 package org.example.spellbook;
-
 import java.util.Random;
 
-public class RandomCreaturelSpell implements Spell {
+public class RandomCreatureSpell implements Spell {
 
     private String[] creatures = {
             "unicorn", "centaur", "troll", "goblin", "wolf", "dragon"};

@@ -10,7 +10,7 @@ public class SpellBook {
         spells.add(new HealingSpell());
         spells.add(new LevitateSpell());
         spells.add(new FlameSpell());
-        spells.add(new RandomCreaturelSpell());
+        spells.add(new RandomCreatureSpell());
         spells.add(new ExitSpell());
     }
 
