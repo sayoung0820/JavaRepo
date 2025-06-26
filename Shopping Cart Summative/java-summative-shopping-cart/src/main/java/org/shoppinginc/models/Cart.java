@@ -1,4 +1,4 @@
-package org.shoppinginc.model;
+package org.shoppinginc.models;
 
 public class Cart {
     private Item item;

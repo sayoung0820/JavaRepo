@@ -1,9 +1,8 @@
 package org.shoppinginc.app;
-import org.shoppinginc.model.Cart;
+import org.shoppinginc.models.Cart;
 import org.shoppinginc.services.CartService;
 import org.shoppinginc.services.InventoryService;
-import org.shoppinginc.services.*;
-import org.shoppinginc.model.*;
+import org.shoppinginc.models.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -61,7 +60,7 @@ public class Main {
                             System.out.println(cartItem);
                         }
                         System.out.println("Enter the SKU of the item you want to remove: ");
-                        String skuToRemove = console.nextLine();
+                        String skuToRemove = console.nextLine().toUpperCase();
                         System.out.println("Enter quantity to remove: ");
                         int qtyToRemove = Integer.parseInt(console.nextLine());
 

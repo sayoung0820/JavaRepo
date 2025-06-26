@@ -1,6 +1,6 @@
 package org.shoppinginc.services;
-import org.shoppinginc.model.Cart;
-import org.shoppinginc.model.Item;
+import org.shoppinginc.models.Cart;
+import org.shoppinginc.models.Item;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,7 +1,7 @@
 package org.shoppinginc.services;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.shoppinginc.model.Item;
+import org.shoppinginc.models.Item;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CartServiceTest {

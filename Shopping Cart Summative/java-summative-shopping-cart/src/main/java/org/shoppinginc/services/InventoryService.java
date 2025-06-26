@@ -1,5 +1,5 @@
 package org.shoppinginc.services;
-import org.shoppinginc.model.Item;
+import org.shoppinginc.models.Item;
 import java.util.ArrayList;
 import java.util.List;
 

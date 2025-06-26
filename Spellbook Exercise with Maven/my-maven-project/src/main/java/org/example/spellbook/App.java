@@ -9,8 +9,6 @@ public class App {
 
         System.out.println("\nWelcome to the Spellbook!");
 
-//        boolean running = true;
-//        String choice = "";
 
         while (true) {
             System.out.println("\nEnter your spell incantation to case it!");
