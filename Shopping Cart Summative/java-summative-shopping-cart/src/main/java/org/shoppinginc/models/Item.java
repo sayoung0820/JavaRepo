@@ -34,8 +34,6 @@ public class Item {
         @Override
         public String toString () {
             return name + " ($" + price + ") - SKU: " + sku + ", Category: " + category;
-
-
         }
     }
 
