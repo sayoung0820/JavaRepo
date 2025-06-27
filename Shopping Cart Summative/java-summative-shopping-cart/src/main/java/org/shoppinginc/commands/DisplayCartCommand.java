@@ -2,7 +2,6 @@ package org.shoppinginc.commands;
 import org.shoppinginc.models.Cart;
 import org.shoppinginc.services.CartService;
 import org.shoppinginc.services.InventoryService;
-
 import java.util.Scanner;
 
 public class DisplayCartCommand implements CommandManager {
