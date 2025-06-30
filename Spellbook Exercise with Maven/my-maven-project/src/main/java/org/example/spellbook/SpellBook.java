@@ -6,7 +6,7 @@ public class SpellBook {
     private ArrayList<Spell> spells;
 
     public SpellBook() {
-        spells = new ArrayList<>();
+        spells = new ArrayList<Spell>();
         spells.add(new HealingSpell());
         spells.add(new LevitateSpell());
         spells.add(new FlameSpell());
