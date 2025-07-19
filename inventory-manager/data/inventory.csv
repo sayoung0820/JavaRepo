@@ -1,0 +1,8 @@
+productId,name,quantity,price,expirationDate,countryOfOrigin,importFee
+P005,Sirloin Steak,40,20.99, 08/05/2025,,
+P003,Imported Olive Oil,10,10.99, ,Italy,50.00
+P030,Walnuts,30,10.99, ,,
+P040,Oranges,60,0.99, ,,
+P020,Red Wine,1,20.00, ,,
+P009,Merlot,0,20.00, ,,
+P008,Sunkist,1,5.00, ,,

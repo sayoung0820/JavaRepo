@@ -20,7 +20,6 @@ public class CsvUtils {
         new File(DATA_FOLDER).mkdirs();
 
         File file = new File(FILE_PATH);
-//        boolean fileExists = new File("resources\\" + FILE_NAME).exists();
         boolean isFileEmpty = !file.exists() || file.length() == 0;
 
         try (FileWriter writer = new FileWriter(file, true)) {
